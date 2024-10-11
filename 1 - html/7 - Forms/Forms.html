@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+
+<body>
+    <h3>Forms</h3>
+    <!-- Contact Form -->
+    <form action="" method="post">
+        <!-- Text input -->
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required size="30" maxlength="10">
+        <br>
+        <!-- Email input -->
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="example@domain.com" required>
+        <br>
+        <!-- Password input -->
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password">
+        <br>
+        <!-- Date input -->
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob">
+        <br>
+
+        <!-- Range Input -->
+        <label for="range">Rate Us:</label>
+        <input type="range" id="range" name="rating" min="1" max="5">
+        <br />
+
+        <!-- Radio Buttons -->
+        <p>Please select your favorite Fruit:
+            <br>
+            <input type="radio" name="Fruits" value="Apple" checked /> Apple
+            <input type="radio" name="Fruits" value="Banana" />Banana
+            <input type="radio" name="Fruits" value="Grapes" /> Grapes
+        </p>
+        <p>Please select your favorite services:
+            <br />
+            <!-- Checkboxes -->
+            <input type="checkbox" name="services" value="Education" checked="checked" /> Education
+            <input type="checkbox" name="services" value="Health" /> Health
+            <input type="checkbox" name="services" value="Food-Serve" /> Free Food
+        </p>
+
+
+        <!-- Select Dropdown -->
+        <select name="Live">
+            <option value="">Select City</option>
+            <option value="Karachi">Karachi</option>
+            <option value="Lahore">Lahore</option>
+            <option value="Islamabad">Islamabad</option>
+        </select>
+        <br>
+        <!-- File input -->
+        <p>Upload your resume in PDF format:</p>
+        <input type="file" name="user-resume" />
+        <br>
+
+        <!-- Text Area -->
+        <textarea name="comments" cols="30" rows="4" placeholder="Write Your Comments"></textarea>
+        <br>
+
+        <!-- Submit Button -->
+        <button type="submit">Submit</button>
+    </form>
+
+
+
+</body>
+
+</html>

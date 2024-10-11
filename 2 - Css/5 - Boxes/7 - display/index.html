@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>display</title>
+    <style>
+        li {
+            margin-right: 10px;
+            /* display block to inline */
+            display: inline;
+            background-color: aqua;
+            border: 1px solid black;
+        }
+
+        span {
+            font-weight: 600;
+            /* display inline to block */
+            display: block;
+            background-color: brown;
+        }
+
+        p {
+            background-color: violet;
+        }
+
+        .card {
+            display: inline-block;
+            /* Use inline-block for card layout */
+            width: 200px;
+            /* Set a fixed width for cards */
+            padding: 15px;
+            margin: 10px;
+            background-color: #fff;
+            border: 2px solid #ccc;
+            border-radius: 15px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .comingsoon {
+            /* hidden  blank space show screen*/
+            /* visibility: hidden; */
+            /* display none space not show blank screen */
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li>home</li>
+            <li>contact</li>
+            <li class="comingsoon">Coming soon</li>
+            <li>about</li>
+        </ul>
+    </nav>
+    <p>Lorem ipsum dolor sit, amet consectetur <span>test inline</span> adipisicing elit. Sequi quasi esse eius officia
+        earu</p>
+
+    <div class="card-container">
+        <div class="card">
+            <h2>Card 1</h2>
+            <p>This is a simple card description.</p>
+        </div>
+        <div class="card">
+            <h2>Card 2</h2>
+            <p>This is another card description.</p>
+        </div>
+        <div class="card">
+            <h2>Card 3</h2>
+            <p>This is yet another card description.</p>
+        </div>
+    </div>
+</body>
+
+</html>

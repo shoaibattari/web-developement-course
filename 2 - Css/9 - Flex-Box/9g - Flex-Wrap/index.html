@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            align-content: center;
+            /* Try center, flex-start */
+            height: 300px;
+        }
+
+        .item {
+            background-color: lightgray;
+            padding: 10px;
+            margin: 5px;
+            width: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- The flex-wrap property controls whether items should wrap onto multiple lines if the container is too small to fit them all on one line.
+
+    Values:
+    nowrap: All items stay on one line (default).
+    wrap: Items will wrap onto multiple lines.
+    wrap-reverse: Items wrap onto multiple lines but in reverse order. -->
+
+
+    <div class="container">
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item 3</div>
+        <div class="item">Item 4</div>
+        <div class="item">Item 5</div>
+    </div>
+
+</body>
+
+
+</html>

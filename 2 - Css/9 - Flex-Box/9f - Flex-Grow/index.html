@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            display: flex;
+
+            height: 200px;
+        }
+
+        .item-1 {
+            background-color: red;
+            flex-grow: 1;
+            /* Item 1 will grow twice as much as the other items */
+        }
+
+        .item-2 {
+            flex-grow: 1;
+            background-color: blue;
+            /* Item 2 will grow less */
+        }
+    </style>
+</head>
+
+<body>
+    <!-- flex-grow: Defines how much a flex item can grow relative to others. -->
+
+
+    <div class="container">
+        <div class="item-1"></div>
+        <div class="item-2"></div>
+    </div>
+
+
+</body>
+
+
+</html>
