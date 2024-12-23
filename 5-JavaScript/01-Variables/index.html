@@ -1,11 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript Variables</title>
+  </head>
+  <body>
+    <h1>JavaScript Variables</h1>
+    <p>
+      Variables are containers for data in memory. Rules for naming variables:
+    </p>
+    <ul>
+      <li>Case-sensitive.</li>
+      <li>Allow only letters, digits, underscores, and <code>$</code>.</li>
+      <li>Start with a letter, underscore, or <code>$</code>.</li>
+      <li>Avoid reserved words.</li>
+    </ul>
+
+    <h2>Variable Declaration Types</h2>
+    <p><code>var</code>: Can be re-declared and updated; global scope.</p>
+    <p>
+      <code>let</code>: Cannot be re-declared but can be updated; block scope.
+    </p>
+    <p><code>const</code>: Cannot be re-declared or updated; block scope.</p>
+
+    <h2>Examples</h2>
+    <pre>
+        <code>
+            // Using var
+            var name = "John";
+            console.log(name); // Output: John
+            name = "Doe";
+            console.log(name); // Output: Doe
+
+            // Using let
+            let age = 25;
+            console.log(age); // Output: 25
+            age = 30;
+            console.log(age); // Output: 30
+
+            // Using const
+            const country = "USA";
+            console.log(country); // Output: USA
+            // country = "Canada"; // This will throw an error
+        </code>
+    </pre>
+
+    <h3>Output</h3>
+    <div
+      id="output"
+      style="background: #e8f5e9; padding: 10px; border: 1px solid #ccc;"
+    ></div>
+
+    <!-- Linking the external JavaScript file -->
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
