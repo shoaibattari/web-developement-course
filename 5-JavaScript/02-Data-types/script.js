@@ -24,14 +24,14 @@ console.log(fruits);
 
 // Object
 let person = {
-    name: "John Doe",
-    age: 30,
-    isEmployed: true
+  name: "John Doe",
+  age: 30,
+  isEmployed: true,
 };
 console.log(person);
 
 // Displaying the output in the HTML
-const outputDiv = document.getElementById('output');
+const outputDiv = document.getElementById("output");
 outputDiv.innerHTML = `
     <p><strong>Number:</strong> ${num}</p>
     <p><strong>String:</strong> ${str}</p>
@@ -39,5 +39,7 @@ outputDiv.innerHTML = `
     <p><strong>Undefined:</strong> ${undefinedVar}</p>
     <p><strong>Null:</strong> ${nullVar}</p>
     <p><strong>Array:</strong> ${fruits.join(", ")}</p>
-    <p><strong>Object:</strong> Name: ${person.name}, Age: ${person.age}, Employed: ${person.isEmployed}</p>
+    <p><strong>Object:</strong> Name: ${person.name}, Age: ${
+  person.age
+}, Employed: ${person.isEmployed}</p>
 `;
