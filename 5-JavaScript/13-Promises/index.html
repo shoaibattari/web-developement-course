@@ -1,11 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <script src="script.js"></script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Promises Example - Login</title>
+  </head>
+  <body>
+    <h1>Login Example with Promises</h1>
+    <button id="loginButton">Login</button>
+    <p id="message"></p>
+
+    <script>
+      function login(isValidate) {
+        return new Promise((resolve, reject) => {
+          if (isValidate) {
+            resolve("User login successful");
+          } else {
+            reject("User login failed");
+          }
+        });
+      }
+
+      function getUserInfo() {
+        const user = {
+          fullName: "Shoaib",
+          age: 25,
+          email: "shoaib@example.com",
+        };
+        setTimeout(() => {
+          document.getElementById(
+            "message"
+          ).innerText = `User Info: Name: ${user.fullName}, Age: ${user.age}, Email: ${user.email}`;
+        }, 500);
+      }
+
+      document.getElementById("loginButton").addEventListener("click", () => {
+        const messageElem = document.getElementById("message");
+        messageElem.innerText = "Processing login...";
+
+        login(true) // Change to `false` to simulate a failed login
+          .then((successMessage) => {
+            messageElem.innerText = successMessage;
+            getUserInfo();
+          })
+          .catch((errorMessage) => {
+            messageElem.innerText = errorMessage;
+          });
+      });
+    </script>
+  </body>
 </html>
