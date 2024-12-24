@@ -1,11 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript Events</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 20px;
+      }
+      .highlight {
+        color: white;
+        background-color: green;
+        padding: 5px;
+      }
+      #clickButton {
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>1. Click Event</h2>
+    <button
+      id="clickButton"
+      style="cursor: pointer;"
+    >
+      Click Me!
+    </button>
+    <p id="clickMessage">Click the button to see a message.</p>
+
+    <h2>2. Mouseover Event</h2>
+    <div
+      id="hoverBox"
+      style="
+        width: 200px;
+        height: 100px;
+        background-color: lightblue;
+        cursor: pointer;
+      "
+    >
+      Hover over me!
+    </div>
+    <p id="hoverMessage">Hover over the box to change its color.</p>
+
+    <h2>3. Keypress Event</h2>
+    <input type="text" id="textInput" placeholder="Type something here..." />
+    <p id="keyMessage">Type in the input box to see the typed characters.</p>
+
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
