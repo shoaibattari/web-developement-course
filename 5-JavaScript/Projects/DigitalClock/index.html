@@ -4,31 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Digital Clock</title>
+    <script src="https://cdn.tailwindcss.com"></script>
     <script src="app.js" defer></script>
-    <style>
-      body {
-        font-family: Arial, sans-serif;
-        text-align: center;
-        background-color: aqua;
-      }
-      h1 {
-        color: black;
-        font-size: 6rem;
-        margin-top: 20vh;
-      }
-      .clock {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 20vh;
-        font-size: 5rem;
-        color: brown;
-      }
-    </style>
   </head>
-  <body>
-    <h1>Digital Clock</h1>
-    <div class="clock">
+  <body class="bg-purple-300 h-screen flex flex-col gap-5 justify-center items-center">
+    <h1 class="text-6xl text-center">Digital Clock</h1>
+    <div class="flex justify-center text-cyan-500 items-center text-6xl ">
       <div id="hours">10</div>
       <div>:</div>
       <div id="minutes">10</div>

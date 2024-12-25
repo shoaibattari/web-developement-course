@@ -18,6 +18,9 @@ if (age >= 18) {
   votingEligibility = "You cannot vote yet.";
 }
 
+// // ternary operator
+// votingEligibility = age >= 18 ? "You can vote!" : "You cannot vote yet.";
+
 // If-Else If-Else Statement
 let score = 85;
 let grade = "";
@@ -31,6 +34,7 @@ if (score >= 90) {
 } else {
   grade = "F";
 }
+
 
 // Display results in HTML
 const outputDiv = document.getElementById("output");

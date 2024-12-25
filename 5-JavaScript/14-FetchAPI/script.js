@@ -5,13 +5,13 @@ fetch("https://fakestoreapi.com/products")
   .catch((err) => console.error("Error fetching products:", err));
 
 function showProducts(data) {
-  let ul = document.querySelector(".list");
+  let dataList = document.querySelector(".list");
 
   data.forEach((product) => {
-    let li = `<h3>${product.title}</h3>
+    let productList = `<h3>${product.title}</h3>
     <p>Price: ${product.price} </p>
     `;
-    ul.innerHTML += li;
+    dataList.innerHTML += productList;
     console.log(product);
   });
 }
