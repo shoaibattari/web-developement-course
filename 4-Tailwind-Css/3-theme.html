@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tailwind CSS Workshop: Zero to Hero</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <style type="text/tailwindcss">
+      /* ADVANCED: Defining a custom theme directly in CSS (v4 style) */
+      @theme {
+        --color-workshop-purple: #8b5cf6;
+        --color-workshop-dark: #1e1b4b;
+        --shadow-glow: 0 0 20px rgba(139, 92, 246, 0.3);
+      }
+
+      /* ADVANCED: Creating a reusable component with @apply */
+      .btn-workshop {
+        @apply px-6 py-3 rounded-full font-bold transition-all duration-300 
+             hover:scale-105 active:scale-95 shadow-md;
+      }
+    </style>
+  </head>
+  <body class="bg-slate-50 text-slate-900 antialiased">
+    <header
+      class="bg-white border-b p-6 flex justify-between items-center sticky top-0 z-50"
+    >
+      <h1 class="text-2xl font-black tracking-tighter text-workshop-purple">
+        TW26.
+      </h1>
+      <nav class="hidden md:flex gap-8 font-medium">
+        <a href="#" class="hover:text-workshop-purple transition">Basics</a>
+        <a href="#" class="hover:text-workshop-purple transition">Responsive</a>
+        <a href="#" class="hover:text-workshop-purple transition">Advanced</a>
+      </nav>
+      <button class="btn-workshop bg-workshop-purple text-white">
+        Join Workshop
+      </button>
+    </header>
+
+    <main class="max-w-6xl mx-auto py-12 px-6">
+      <section class="mb-20">
+        <h2 class="text-3xl font-bold mb-8">1. Responsive Grid Systems</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div
+            class="group bg-white p-6 rounded-3xl border border-slate-200 shadow-sm hover:shadow-glow hover:border-workshop-purple transition-all cursor-pointer"
+          >
+            <div
+              class="w-12 h-12 bg-purple-100 rounded-2xl flex items-center justify-center mb-4 group-hover:bg-workshop-purple transition-colors"
+            >
+              <span class="text-workshop-purple group-hover:text-white"
+                >🚀</span
+              >
+            </div>
+            <h3 class="text-xl font-bold mb-2">Speed to Market</h3>
+            <p class="text-slate-500 leading-relaxed">
+              Utility classes allow you to build custom UIs without leaving your
+              HTML file.
+            </p>
+          </div>
+
+          <div
+            class="bg-white p-6 rounded-3xl border border-slate-200 shadow-sm"
+          >
+            <div
+              class="w-12 h-12 bg-green-100 rounded-2xl flex items-center justify-center mb-4"
+            >
+              <span>🎨</span>
+            </div>
+            <h3 class="text-xl font-bold mb-2">Pixel Perfection</h3>
+            <p class="text-slate-500 mt-[17px]">
+              Need a specific spacing? Use brackets like
+              <code>mt-[17px]</code> for custom values.
+            </p>
+          </div>
+
+          <div class="bg-workshop-dark p-6 rounded-3xl shadow-xl text-white">
+            <div
+              class="w-12 h-12 bg-white/10 rounded-2xl flex items-center justify-center mb-4"
+            >
+              <span>🌙</span>
+            </div>
+            <h3 class="text-xl font-bold mb-2">Dark Mode</h3>
+            <p class="text-slate-300">
+              Tailwind makes it easy to handle dark themes using the
+              <code>dark:</code> prefix.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2 class="text-3xl font-bold mb-8">2. Modern Glassmorphism</h2>
+        <div
+          class="relative h-64 rounded-3xl overflow-hidden flex items-center justify-center bg-gradient-to-tr from-indigo-500 via-purple-500 to-pink-500"
+        >
+          <div
+            class="z-10 bg-white/20 backdrop-blur-xl border border-white/30 p-8 rounded-2xl shadow-2xl max-w-md text-center"
+          >
+            <h4 class="text-white text-2xl font-bold">
+              Advanced Backdrop Filters
+            </h4>
+            <p class="text-white/80 mt-2 font-light">
+              Using <code>backdrop-blur</code> and <code>opacity</code> to
+              create high-end UI effects.
+            </p>
+          </div>
+          <div
+            class="absolute top-0 left-0 w-32 h-32 bg-yellow-300 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-pulse"
+          ></div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="mt-20 py-12 bg-slate-900 text-slate-400 text-center">
+      <p>
+        © 2026 Tailwind Advanced Workshop • Built with ❤️ and Utility Classes
+      </p>
+    </footer>
+  </body>
+</html>
